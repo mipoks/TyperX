@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="body" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#handleTypedCode" onMouseClicked="#checkSensor" prefHeight="568.0" prefWidth="774.0" spacing="8.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.typergame.client.controllers.MainGameController">
+    <children >
+      <TextFlow fx:id="gameScreen" prefHeight="489.0" prefWidth="900.0" textAlignment="CENTER" />
+      <Text fx:id="tappedChar" strokeType="OUTSIDE" strokeWidth="0.0" text=" T" wrappingWidth="124.13671875">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Text>
+    </children>
+</VBox>

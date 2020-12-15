@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="body" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="774.0" spacing="8.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.typergame.client.controllers.WinController">
+    <children>
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You win! And Its... " wrappingWidth="338.13671875">
+            <font>
+                <Font name="Impact" size="48.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="imageView" fitHeight="268.0" fitWidth="497.0" pickOnBounds="true" preserveRatio="true" />
+        <Button mnemonicParsing="false" onMouseClicked="#goToMenu" prefHeight="81.0" prefWidth="205.0" text="Back To Menu" />
+    </children>
+</VBox>

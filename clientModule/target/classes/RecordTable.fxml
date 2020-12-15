@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="body" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="774.0" spacing="8.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.typergame.client.controllers.RecordsController">
+    <children>
+      <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="0.0" prefWidth="4.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="773.0" minWidth="10.0" prefWidth="770.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="185.0" minHeight="1.0" prefHeight="18.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="539.0" minHeight="10.0" prefHeight="504.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BarChart fx:id="chart" prefHeight="451.0" prefWidth="666.0" title="Рекорды" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <xAxis>
+                <CategoryAxis label="Players" side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" label="symbols per minute" side="LEFT" upperBound="270.0" />
+              </yAxis>
+            </BarChart>
+            <Button mnemonicParsing="false" onMouseClicked="#getMainScene" prefHeight="36.0" prefWidth="763.0" text="На главный экран" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </Button>
+         </children>
+      </GridPane>
+    </children>
+</VBox>
